@@ -1,4 +1,4 @@
-package com.quispcs.serviceproduct;
+package com.serviceproduct;
 
 import io.swagger.v3.oas.models.OpenAPI;
 import io.swagger.v3.oas.models.info.Info;

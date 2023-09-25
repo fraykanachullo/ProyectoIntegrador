@@ -1,4 +1,4 @@
-package com.quispcs.serviceproduct.entity;
+package com.serviceproduct.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.persistence.*;

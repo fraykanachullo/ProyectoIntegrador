@@ -1,4 +1,4 @@
-package com.quispcs.serviceproduct.entity;
+package com.serviceproduct.entity;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;

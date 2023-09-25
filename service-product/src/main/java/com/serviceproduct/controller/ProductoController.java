@@ -1,4 +1,4 @@
-package com.quispcs.serviceproduct.controller;
+package com.serviceproduct.controller;
 
 import com.quispcs.serviceproduct.entity.Category;
 import com.quispcs.serviceproduct.entity.Producto;
