@@ -19,7 +19,7 @@ public class ServiceVentaApplication {
 	@Bean
 	public OpenAPI custoOpenAPI() {
 		return new OpenAPI().info(new Info()
-				.title("OPEN API MICROSERVICIOS VENTA")
+				.title("OPEN API MICROSERVICIOS DE VENTAS")
 				.version("0.0.1")
 				.description("servicio web venta")
 				.termsOfService("http://swagger.io/terms")
