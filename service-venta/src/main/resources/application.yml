@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: Venta-Service
+  profiles:
+    active: development
+  config:
+    import: optional:configserver:http://root:s3cr3t@localhost:8084
+
+
