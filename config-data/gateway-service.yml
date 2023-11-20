@@ -3,10 +3,27 @@ server:
 eureka:
   client:
     serviceUrl:
-      defaultZone: ${EUREKA_URI:http://localhost:1111/eureka}
+      defaultZone: ${EUREKA_URI:http://localhost:8090/eureka}
+  instance:
+    instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
 spring:
   cloud:
     gateway:
+      globalcors:
+          corsConfigurations:
+            '[/**]':
+              allowedOrigins:
+              # - "http://localhost:8080"
+              #puerto de react
+              - "http://localhost:3000"
+              #puerto de laravel
+              - "http://localhost:8000"
+              allowedHeaders: "*"
+              allowedMethods:
+                - GET
+                - POST
+                - PUT
+                - DELETE
       discovery:
         locator:
           enabled: true
@@ -15,8 +32,30 @@ spring:
           uri: lb://cliente-service
           predicates:
             - Path=/cliente/**
-        - id: curso-service
-          uri: lb://curso-service
+          filters:
+            - AuthFilter
+        - id: producto-service
+          uri: lb://producto-service
           predicates:
-            - Path=/curso/**  
+            - Path=/producto/**
+          filters:
+            - AuthFilter
+        - id: venta-service
+          uri: lb://venta-service
+          predicates:
+            - Path=/venta/**
+          filters:
+            - AuthFilter
+        - id: categoria-service
+          uri: lb://categoria-service
+          predicates:
+            - Path=/categoria/** 
+          filters:
+            - AuthFilter       
+        - id: auth-service
+          uri: lb://auth-service
+          predicates:
+            - Path=/auth/**       
+
+   
 
