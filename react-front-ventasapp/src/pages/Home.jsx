@@ -10,7 +10,7 @@ const Home = () => {
  
       <div class="w-full px-6 py-6 mx-auto">
        
-        home
+        home hello word
       </div>
 
     </AppLayout>
