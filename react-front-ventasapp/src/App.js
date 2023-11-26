@@ -5,6 +5,8 @@ import CategoriaProds from './pages/CategoriaProds';
 import Home from './pages/Home';
 import Login from "./pages/auth/Loogin";
 import Cproductos from './pages/Producto_crud';
+import Clientes from './pages/Cliente';
+import Ventas from './pages/Venta';
 
 function App() {
   return (
@@ -17,6 +19,8 @@ function App() {
      <Route path="/dashboard" element={<Home/>} />
      <Route path="/categoria" element={<CategoriaProds />} />
      <Route path="/producto" element={<Cproductos />} />
+     <Route path="/cliente" element={<Clientes />} />
+     <Route path="/venta" element={<Ventas />} />
      </Routes>
   </div>
    </Router>

@@ -8,8 +8,7 @@
             "mainClass": "com.example.configserve_tarea.ConfigserveTareaApplication",
             "projectName": "configserve_tarea",
             "args": "",
-            "envFile": "${workspaceFolder}/.env",
-            "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=58625 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=configserve_tarea"
+            "envFile": "${workspaceFolder}/.env"
         },
         {
             "type": "java",
@@ -18,27 +17,6 @@
             "cwd": "${workspaceFolder}",
             "mainClass": "com.example.auth.AuthApplication",
             "projectName": "auth",
-            "args": "",
-            "envFile": "${workspaceFolder}/.env",
-            "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=58678 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=auth"
-        },
-        {
-            "type": "java",
-            "name": "Spring Boot-CategoriaApplication<categoria>",
-            "request": "launch",
-            "cwd": "${workspaceFolder}",
-            "mainClass": "com.example.categoria.CategoriaApplication",
-            "projectName": "categoria",
-            "args": "",
-            "envFile": "${workspaceFolder}/.env"
-        },
-        {
-            "type": "java",
-            "name": "Spring Boot-ProductoApplication<producto>",
-            "request": "launch",
-            "cwd": "${workspaceFolder}",
-            "mainClass": "com.example.producto.ProductoApplication",
-            "projectName": "producto",
             "args": "",
             "envFile": "${workspaceFolder}/.env"
         },
@@ -49,37 +27,6 @@
             "cwd": "${workspaceFolder}",
             "mainClass": "com.example.gatewayserver.GatewayServerApplication",
             "projectName": "gateway-server",
-            "args": "",
-            "envFile": "${workspaceFolder}/.env",
-            "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=58655 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=gateway-server"
-        },
-        {
-            "type": "java",
-            "name": "Spring Boot-RegistryServeApplication<registry-serve>",
-            "request": "launch",
-            "cwd": "${workspaceFolder}",
-            "mainClass": "com.example.registryserve.RegistryServeApplication",
-            "projectName": "registry-serve",
-            "args": "",
-            "envFile": "${workspaceFolder}/.env"
-        },
-        {
-            "type": "java",
-            "name": "Spring Boot-ClienteApplication<cliente>",
-            "request": "launch",
-            "cwd": "${workspaceFolder}",
-            "mainClass": "com.example.cliente.ClienteApplication",
-            "projectName": "cliente",
-            "args": "",
-            "envFile": "${workspaceFolder}/.env"
-        },
-        {
-            "type": "java",
-            "name": "Spring Boot-AdminServerApplication<admin-server>",
-            "request": "launch",
-            "cwd": "${workspaceFolder}",
-            "mainClass": "com.example.adminserver.AdminServerApplication",
-            "projectName": "admin-server",
             "args": "",
             "envFile": "${workspaceFolder}/.env"
         }

@@ -1,6 +1,6 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
-
+import 'jspdf-autotable';
 import Modal from "../component/Modal";
 import AppLayout from "../component/admin/AppLayout";
 import css from '../styles/add.css';
@@ -215,12 +215,12 @@ const CategoriaProds = () => {
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222" />
         </svg>
       </div>
-      <h2 className="text-2xl font-bold text-center">{categoriaProdEditado.id ? 'Editar Categoria' : 'Crear Categoria'}</h2>
+      <h2 className="text-2xl font-bold text-center">{categoriaProdEditado.id ? 'Editar CategoriaProd' : 'Crear CategoriaProd'}</h2>
       <form onSubmit={categoriaProdEditado.id ? actualizarCategoriaProd : crearCategoriaProd}>
         <div className="mt-4">
           <div className="flex flex-wrap">
-            <div className="ml-1 w-full">
-              <label className="block" >Titulo</label>
+            <div className="w-full">
+              <label className="block">Titulo</label>
               <input
                 value={categoriaProdEditado.titulo}
                 onChange={(event) =>
@@ -334,9 +334,9 @@ const CategoriaProds = () => {
 
         <div class="flex flex-wrap -mx-3">
           <div class="flex-none w-full max-w-full px-3">
-            <div class=" flex flex-col min-w-0 mb-6 break-words  bg-white border-0 border-transparent border-solid shadow-xl dark:bg-slate-850 dark:shadow-dark-xl rounded-2xl bg-clip-border">
+            <div class=" flex flex-col min-w-0 mb-6 break-words bg-white border-0 border-transparent border-solid shadow-xl dark:bg-slate-850 dark:shadow-dark-xl rounded-2xl bg-clip-border">
               <div class="p-6 pb-0 mb-0 border-b-0 border-b-solid rounded-t-2xl border-b-transparent">
-                <h6 class="text-red-700 font-bold">Lista De Categoria Artesanal </h6>
+                <h6 class="dark:text-white font-bold">Lista De CategoriaProd</h6>
               </div>
               <div class="flex-auto px-0 pt-0 pb-2">
                 <div class="p-0 overflow-x-auto ps">
@@ -385,11 +385,11 @@ const CategoriaProds = () => {
                   <table class="items-center w-full mb-0 align-top border-collapse dark:border-white/40 text-slate-500">
                     <thead class="align-bottom">
                       <tr>
-                        <th class="px-6 py-3 font-bold text-left uppercase align-middle bg-transparent border-b border-collapse shadow-none dark:border-white/40 dark:text-white text-xxs border-b-solid tracking-none whitespace-nowrap text-slate-500  ">ID</th>
-                        <th class="px-6 py-3 pl-2 font-bold text-left uppercase align-middle bg-transparent border-b border-collapse shadow-none dark:border-white/40 dark:text-white text-xxs border-b-solid tracking-none whitespace-nowrap text-slate-600  ">Titulo</th>
-                        <th class="px-6 py-3 pl-2 font-bold text-left uppercase align-middle bg-transparent border-b border-collapse shadow-none dark:border-white/40 dark:text-white text-xxs border-b-solid tracking-none whitespace-nowrap text-slate-600  ">Descripccion</th>
-                        <th class="px-6 py-3 pl-2 font-bold text-center uppercase align-middle bg-transparent border-b border-collapse shadow-none dark:border-white/40 dark:text-white text-xxs border-b-solid tracking-none whitespace-nowrap text-slate-600  ">Creado</th>
-                        <th class="px-6 py-3  font-bold text-center uppercase align-middle bg-transparent border-b border-collapse shadow-none dark:border-white/40 dark:text-white text-xxs border-b-solid tracking-none whitespace-nowrap text-slate-600  ">Actualizado</th>
+                        <th class="px-6 py-3 font-bold text-left uppercase align-middle bg-transparent border-b border-collapse shadow-none dark:border-white/40 dark:text-white text-xxs border-b-solid tracking-none whitespace-nowrap text-slate-400  ">ID</th>
+                        <th class="px-6 py-3 pl-2 font-bold text-left uppercase align-middle bg-transparent border-b border-collapse shadow-none dark:border-white/40 dark:text-white text-xxs border-b-solid tracking-none whitespace-nowrap text-slate-400  ">Titulo</th>
+                        <th class="px-6 py-3 pl-2 font-bold text-left uppercase align-middle bg-transparent border-b border-collapse shadow-none dark:border-white/40 dark:text-white text-xxs border-b-solid tracking-none whitespace-nowrap text-slate-400  ">Descripccion</th>
+                        <th class="px-6 py-3 pl-2 font-bold text-center uppercase align-middle bg-transparent border-b border-collapse shadow-none dark:border-white/40 dark:text-white text-xxs border-b-solid tracking-none whitespace-nowrap text-slate-400  ">Creado</th>
+                        <th class="px-6 py-3  font-bold text-center uppercase align-middle bg-transparent border-b border-collapse shadow-none dark:border-white/40 dark:text-white text-xxs border-b-solid tracking-none whitespace-nowrap text-slate-400  ">Actualizado</th>
                         <th class="px-6 py-3  font-semibold capitalize align-middle bg-transparent border-b border-collapse border-solid shadow-none dark:border-white/40 dark:text-white tracking-none whitespace-nowrap text-slate-400  "></th>
                       </tr>
                     </thead>
@@ -407,16 +407,16 @@ const CategoriaProds = () => {
                           </td>
                       
                           <td class="p-2 align-middle bg-transparent border-b dark:border-white/40 whitespace-nowrap shadow-transparent">
-                            <p class="mb-0 text-xl leading-tight dark:text-white dark:opacity-80 text-slate-800">{categoriaProd.titulo}</p>
+                            <p class="mb-0 text-xs leading-tight dark:text-white dark:opacity-80 text-slate-400">{categoriaProd.titulo}</p>
                           </td>
                           <td class="p-2 align-middle bg-transparent border-b dark:border-white/40 whitespace-nowrap shadow-transparent">
-                            <p class="mb-0 text-xl leading-tight dark:text-white dark:opacity-80 text-slate-800">{categoriaProd.descripccion}</p>
+                            <p class="mb-0 text-xs leading-tight dark:text-white dark:opacity-80 text-slate-400">{categoriaProd.descripccion}</p>
                           </td>
                           <td class="p-2 text-center align-middle bg-transparent border-b dark:border-white/40 whitespace-nowrap shadow-transparent">
-                            <span class="text-xs font-semibold leading-tight dark:text-white dark:opacity-80 text-slate-800">{categoriaProd.created_at}</span>
+                            <span class="text-xs font-semibold leading-tight dark:text-white dark:opacity-80 text-slate-400">{categoriaProd.created_at}</span>
                           </td>
                           <td class="p-2 text-center align-middle bg-transparent border-b dark:border-white/40 whitespace-nowrap shadow-transparent">
-                            <span class="text-xs font-semibold leading-tight dark:text-white dark:opacity-80 text-slate-800">{categoriaProd.updated_at}</span>
+                            <span class="text-xs font-semibold leading-tight dark:text-white dark:opacity-80 text-slate-400">{categoriaProd.updated_at}</span>
                           </td>
                           <td class=" sticky right-0 p-2 align-middle bg-transparent border-b dark:border-white/40 whitespace-nowrap shadow-transparent">
                             {/* <div class="ml-auto text-right"> */}

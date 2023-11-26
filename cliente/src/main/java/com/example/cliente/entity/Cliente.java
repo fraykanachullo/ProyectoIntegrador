@@ -17,7 +17,7 @@ public class Cliente {
     private String apellidopaterno;
     private String apellidomaterno;
     private String dni;
-    private boolean sexo;
+    private String sexo;
     private String telefono;
     private String celular;
     private String direccion;
