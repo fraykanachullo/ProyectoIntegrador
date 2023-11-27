@@ -7,7 +7,7 @@ font-family: 'Roboto', sans-serif;
 } */
 
 .bodyy{
-background-image: url(https://i.pinimg.com/originals/0e/9d/78/0e9d785c21bdf61fd4d86f42495940ac.jpg);
+background-image: url(https://otroradesign.com/wp-content/uploads/2019/10/elaboracio%CC%81n-manual.jpg);
 background-size: cover;
 background-repeat: no-repeat;
 background-position: center;
@@ -35,7 +35,7 @@ display: flex;
 justify-content: center;
 -webkit-backdrop-filter: blur(10px);
 backdrop-filter: blur(10px);
-background-color: rgba(0, 128, 255, 0.5);
+background-color: rgba(242, 242, 242, 0.8);
 
 }
 
@@ -108,6 +108,7 @@ background: white;
 position: absolute;
 border-radius: 20px;
 }
+
 
 .contenedor__login-register form h2{
 font-size: 30px;

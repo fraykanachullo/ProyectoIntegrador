@@ -455,11 +455,11 @@ const Clientes = () => {
                   <table class="items-center w-full mb-0 align-top border-collapse dark:border-white/40 text-slate-500">
                     <thead class="align-bottom">
                       <tr>
-                        <th class="px-6 py-3 font-bold text-left uppercase align-middle bg-transparent border-b border-collapse shadow-none dark:border-white/40 dark:text-white text-xxs border-b-solid tracking-none whitespace-nowrap text-slate-400  ">ID</th>
-                        <th class="px-6 py-3 pl-2 font-bold text-left uppercase align-middle bg-transparent border-b border-collapse shadow-none dark:border-white/40 dark:text-white text-xxs border-b-solid tracking-none whitespace-nowrap text-slate-400  ">dni</th>
-                        <th class="px-6 py-3 pl-2 font-bold text-left uppercase align-middle bg-transparent border-b border-collapse shadow-none dark:border-white/40 dark:text-white text-xxs border-b-solid tracking-none whitespace-nowrap text-slate-400  ">apellidopaterno</th>
-                        <th class="px-6 py-3 pl-2 font-bold text-center uppercase align-middle bg-transparent border-b border-collapse shadow-none dark:border-white/40 dark:text-white text-xxs border-b-solid tracking-none whitespace-nowrap text-slate-400  ">Creado</th>
-                        <th class="px-6 py-3  font-bold text-center uppercase align-middle bg-transparent border-b border-collapse shadow-none dark:border-white/40 dark:text-white text-xxs border-b-solid tracking-none whitespace-nowrap text-slate-400  ">Actualizado</th>
+                        <th class="px-6 py-3 font-bold text-left uppercase align-middle bg-transparent border-b border-collapse shadow-none dark:border-white/40 dark:text-white text-xxs border-b-solid tracking-none whitespace-nowrap text-slate-800  ">ID</th>
+                        <th class="px-6 py-3 pl-2 font-bold text-left uppercase align-middle bg-transparent border-b border-collapse shadow-none dark:border-white/40 dark:text-white text-xxs border-b-solid tracking-none whitespace-nowrap text-slate-800  ">dni</th>
+                        <th class="px-6 py-3 pl-2 font-bold text-left uppercase align-middle bg-transparent border-b border-collapse shadow-none dark:border-white/40 dark:text-white text-xxs border-b-solid tracking-none whitespace-nowrap text-slate-800  ">apellidopaterno</th>
+                        <th class="px-6 py-3 pl-2 font-bold text-center uppercase align-middle bg-transparent border-b border-collapse shadow-none dark:border-white/40 dark:text-white text-xxs border-b-solid tracking-none whitespace-nowrap text-slate-800  ">Creado</th>
+                        <th class="px-6 py-3  font-bold text-center uppercase align-middle bg-transparent border-b border-collapse shadow-none dark:border-white/40 dark:text-white text-xxs border-b-solid tracking-none whitespace-nowrap text-slate-800  ">Actualizado</th>
                         <th class="px-6 py-3  font-semibold capitalize align-middle bg-transparent border-b border-collapse border-solid shadow-none dark:border-white/40 dark:text-white tracking-none whitespace-nowrap text-slate-400  "></th>
                       </tr>
                     </thead>
@@ -477,16 +477,16 @@ const Clientes = () => {
                           </td>
                       
                           <td class="p-2 align-middle bg-transparent border-b dark:border-white/40 whitespace-nowrap shadow-transparent">
-                            <p class="mb-0 text-xs leading-tight dark:text-white dark:opacity-80 text-slate-400">{cliente.dni}</p>
+                            <p class="mb-0 text-xs leading-tight dark:text-white dark:opacity-80 text-slate-800">{cliente.dni}</p>
                           </td>
                           <td class="p-2 align-middle bg-transparent border-b dark:border-white/40 whitespace-nowrap shadow-transparent">
-                            <p class="mb-0 text-xs leading-tight dark:text-white dark:opacity-80 text-slate-400">{cliente.apellidopaterno}</p>
+                            <p class="mb-0 text-xs leading-tight dark:text-white dark:opacity-80 text-slate-800">{cliente.apellidopaterno}</p>
                           </td>
                           <td class="p-2 text-center align-middle bg-transparent border-b dark:border-white/40 whitespace-nowrap shadow-transparent">
-                            <span class="text-xs font-semibold leading-tight dark:text-white dark:opacity-80 text-slate-400">{cliente.created_at}</span>
+                            <span class="text-xs font-semibold leading-tight dark:text-white dark:opacity-80 text-slate-800">{cliente.created_at}</span>
                           </td>
                           <td class="p-2 text-center align-middle bg-transparent border-b dark:border-white/40 whitespace-nowrap shadow-transparent">
-                            <span class="text-xs font-semibold leading-tight dark:text-white dark:opacity-80 text-slate-400">{cliente.updated_at}</span>
+                            <span class="text-xs font-semibold leading-tight dark:text-white dark:opacity-80 text-slate-800">{cliente.updated_at}</span>
                           </td>
                           <td class=" sticky right-0 p-2 align-middle bg-transparent border-b dark:border-white/40 whitespace-nowrap shadow-transparent">
                             {/* <div class="ml-auto text-right"> */}

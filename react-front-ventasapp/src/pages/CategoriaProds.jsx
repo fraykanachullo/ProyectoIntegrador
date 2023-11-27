@@ -215,7 +215,7 @@ const CategoriaProds = () => {
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222" />
         </svg>
       </div>
-      <h2 className="text-2xl font-bold text-center">{categoriaProdEditado.id ? 'Editar CategoriaProd' : 'Crear CategoriaProd'}</h2>
+      <h2 className="text-2xl font-bold text-center">{categoriaProdEditado.id ? 'Editar CategoriaArtesanal' : 'Crear CategoriaArtesanal'}</h2>
       <form onSubmit={categoriaProdEditado.id ? actualizarCategoriaProd : crearCategoriaProd}>
         <div className="mt-4">
           <div className="flex flex-wrap">
@@ -336,7 +336,7 @@ const CategoriaProds = () => {
           <div class="flex-none w-full max-w-full px-3">
             <div class=" flex flex-col min-w-0 mb-6 break-words bg-white border-0 border-transparent border-solid shadow-xl dark:bg-slate-850 dark:shadow-dark-xl rounded-2xl bg-clip-border">
               <div class="p-6 pb-0 mb-0 border-b-0 border-b-solid rounded-t-2xl border-b-transparent">
-                <h6 class="dark:text-white font-bold">Lista De CategoriaProd</h6>
+                <h6 class="dark:text-white font-bold">Lista De Categoria Artesania</h6>
               </div>
               <div class="flex-auto px-0 pt-0 pb-2">
                 <div class="p-0 overflow-x-auto ps">
@@ -385,11 +385,11 @@ const CategoriaProds = () => {
                   <table class="items-center w-full mb-0 align-top border-collapse dark:border-white/40 text-slate-500">
                     <thead class="align-bottom">
                       <tr>
-                        <th class="px-6 py-3 font-bold text-left uppercase align-middle bg-transparent border-b border-collapse shadow-none dark:border-white/40 dark:text-white text-xxs border-b-solid tracking-none whitespace-nowrap text-slate-400  ">ID</th>
-                        <th class="px-6 py-3 pl-2 font-bold text-left uppercase align-middle bg-transparent border-b border-collapse shadow-none dark:border-white/40 dark:text-white text-xxs border-b-solid tracking-none whitespace-nowrap text-slate-400  ">Titulo</th>
-                        <th class="px-6 py-3 pl-2 font-bold text-left uppercase align-middle bg-transparent border-b border-collapse shadow-none dark:border-white/40 dark:text-white text-xxs border-b-solid tracking-none whitespace-nowrap text-slate-400  ">Descripccion</th>
-                        <th class="px-6 py-3 pl-2 font-bold text-center uppercase align-middle bg-transparent border-b border-collapse shadow-none dark:border-white/40 dark:text-white text-xxs border-b-solid tracking-none whitespace-nowrap text-slate-400  ">Creado</th>
-                        <th class="px-6 py-3  font-bold text-center uppercase align-middle bg-transparent border-b border-collapse shadow-none dark:border-white/40 dark:text-white text-xxs border-b-solid tracking-none whitespace-nowrap text-slate-400  ">Actualizado</th>
+                        <th class="px-6 py-3 font-bold text-left uppercase align-middle bg-transparent border-b border-collapse shadow-none dark:border-white/40 dark:text-white text-xxs border-b-solid tracking-none whitespace-nowrap text-slate-800  ">ID</th>
+                        <th class="px-6 py-3 pl-2 font-bold text-left uppercase align-middle bg-transparent border-b border-collapse shadow-none dark:border-white/40 dark:text-white text-xxs border-b-solid tracking-none whitespace-nowrap text-slate-800  ">Titulo</th>
+                        <th class="px-6 py-3 pl-2 font-bold text-left uppercase align-middle bg-transparent border-b border-collapse shadow-none dark:border-white/40 dark:text-white text-xxs border-b-solid tracking-none whitespace-nowrap text-slate-800  ">Descripccion</th>
+                        <th class="px-6 py-3 pl-2 font-bold text-center uppercase align-middle bg-transparent border-b border-collapse shadow-none dark:border-white/40 dark:text-white text-xxs border-b-solid tracking-none whitespace-nowrap text-slate-800  ">Creado</th>
+                        <th class="px-6 py-3  font-bold text-center uppercase align-middle bg-transparent border-b border-collapse shadow-none dark:border-white/40 dark:text-white text-xxs border-b-solid tracking-none whitespace-nowrap text-slate-800  ">Actualizado</th>
                         <th class="px-6 py-3  font-semibold capitalize align-middle bg-transparent border-b border-collapse border-solid shadow-none dark:border-white/40 dark:text-white tracking-none whitespace-nowrap text-slate-400  "></th>
                       </tr>
                     </thead>
@@ -407,22 +407,22 @@ const CategoriaProds = () => {
                           </td>
                       
                           <td class="p-2 align-middle bg-transparent border-b dark:border-white/40 whitespace-nowrap shadow-transparent">
-                            <p class="mb-0 text-xs leading-tight dark:text-white dark:opacity-80 text-slate-400">{categoriaProd.titulo}</p>
+                            <p class="mb-0 text-xs leading-tight dark:text-white dark:opacity-80 text-slate-800">{categoriaProd.titulo}</p>
                           </td>
                           <td class="p-2 align-middle bg-transparent border-b dark:border-white/40 whitespace-nowrap shadow-transparent">
-                            <p class="mb-0 text-xs leading-tight dark:text-white dark:opacity-80 text-slate-400">{categoriaProd.descripccion}</p>
+                            <p class="mb-0 text-xs leading-tight dark:text-white dark:opacity-80 text-slate-800">{categoriaProd.descripccion}</p>
                           </td>
                           <td class="p-2 text-center align-middle bg-transparent border-b dark:border-white/40 whitespace-nowrap shadow-transparent">
-                            <span class="text-xs font-semibold leading-tight dark:text-white dark:opacity-80 text-slate-400">{categoriaProd.created_at}</span>
+                            <span class="text-xs font-semibold leading-tight dark:text-white dark:opacity-80 text-slate-800">{categoriaProd.created_at}</span>
                           </td>
                           <td class="p-2 text-center align-middle bg-transparent border-b dark:border-white/40 whitespace-nowrap shadow-transparent">
-                            <span class="text-xs font-semibold leading-tight dark:text-white dark:opacity-80 text-slate-400">{categoriaProd.updated_at}</span>
+                            <span class="text-xs font-semibold leading-tight dark:text-white dark:opacity-80 text-slate-800">{categoriaProd.updated_at}</span>
                           </td>
                           <td class=" sticky right-0 p-2 align-middle bg-transparent border-b dark:border-white/40 whitespace-nowrap shadow-transparent">
                             {/* <div class="ml-auto text-right"> */}
                             <div className=" m-1 btns inline-block px-4 py-3 mb-0 font-bold text-center uppercase align-middle transition-all bg-transparent border-0 rounded-lg shadow-none cursor-pointer leading-pro text-xs ease-soft-in bg-150 hover:scale-102 active:opacity-85 bg-x-25" href="javascript:;">
                               <button onClick={() => eliminarCategoriaProd(categoriaProd.id)} >
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-red-400 ">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-red-600 ">
                                   <path stroke-linecap="round" stroke-linejoin="round" d="M14.74 9l-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 01-2.244 2.077H8.084a2.25 2.25 0 01-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 00-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 013.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 00-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 00-7.5 0" />
                                 </svg>
                               </button>
